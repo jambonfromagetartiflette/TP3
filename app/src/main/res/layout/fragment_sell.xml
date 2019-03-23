@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="60dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:text="Modèle"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:padding="2dp">
+                <Spinner
+                    android:id="@+id/model_choice_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:entries="@array/spinnerItemsModel"
+                    />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:text="Prix en $ CAD"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="666"
+                android:inputType="number"
+                android:layout_gravity="start"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kilomètres au compteur"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/kilometers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="6666"
+                android:inputType="number"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date de production"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/year"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1997"
+                android:editable="false"
+                android:inputType="none" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Type de transmission"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:padding="2dp">
+                <Spinner
+                    android:id="@+id/transmission_choice_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:entries="@array/spinnerItemsTransmission"
+                    />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Etes vous le propriétaire ?"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <RadioGroup
+                android:id="@+id/owner"
+                android:layout_marginTop="4dp"
+                android:paddingBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/yes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Oui"
+                    android:checked="true" />
+                <RadioButton
+                    android:id="@+id/no"
+                    android:text="Non"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+
+            <ImageView
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                android:contentDescription="char"
+                android:background="@color/colorPrimary"
+                android:paddingTop="6dp"
+                android:layout_marginBottom="15dp"
+                android:src="@drawable/ic_file_upload_black_24dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

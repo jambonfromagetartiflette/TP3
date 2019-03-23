@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:padding="10dp"
+android:orientation="vertical">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Email"
+    android:gravity="center"
+    android:textSize="20sp"
+    android:paddingBottom="10dp"
+    android:textStyle="bold" />
+
+<EditText
+    android:id="@+id/mail"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="nicolas-daniel.charpentier.1@ulaval.ca"
+    android:text="nicolas-daniel.charpentier.1@ulaval.ca"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NI"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:paddingBottom="10dp"
+        android:textStyle="bold" />
+
+<EditText
+    android:id="@+id/ni"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="111244587"
+    android:text="111244587"/>
+
+<Button
+    android:id="@+id/dialogButtonOk"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Valider"/>
+
+</LinearLayout>

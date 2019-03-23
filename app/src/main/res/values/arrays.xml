@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinnerItemsModel">
+        <item>Acura</item>
+        <item>Aston Martin</item>
+        <item>Audi</item>
+        <item>BMW</item>
+        <item>Buick</item>
+        <item>Cadillac</item>
+        <item>Chevrolet</item>
+        <item>Chrysler</item>
+        <item>Dodge</item>
+        <item>Ferarri</item>
+        <item>Ford</item>
+        <item>GMC</item>
+        <item>Honda</item>
+        <item>Hyundai</item>
+        <item>Isuzu</item>
+        <item>Jeep</item>
+        <item>Kia</item>
+        <item>Land Rover</item>
+        <item>Lotus</item>
+        <item>Maserati</item>
+        <item>Mazda</item>
+        <item>Mercedes-Benz</item>
+        <item>Nissan</item>
+        <item>Porsche</item>
+        <item>Rolls-Royce</item>
+        <item>Saab</item>
+        <item>Saturn</item>
+        <item>Scion</item>
+        <item>Smart</item>
+        <item>Subaru</item>
+        <item>Toyota</item>
+        <item>Volkswagon</item>
+        <item>Volvo</item>
+    </string-array>
+
+    <string-array name="spinnerItemsTransmission">
+        <item>Automatique</item>
+        <item>Manuel</item>
+        <item>Robotique</item>
+    </string-array>
+</resources>
